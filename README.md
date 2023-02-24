@@ -12,7 +12,7 @@ You can watch [this video](https://youtu.be/996OiexHze0) to better understand ho
   - [Axios](https://github.com/axios/axios) for calling backend API
   - [Vueuse](https://vueuse.org/) for loading Google Identity Service JavaScript API
   - [Vue 3 Google Login](https://yobaji.github.io/vue3-google-login/): Provides ready-to-use login compoments and callback functions (Although this project only use it for Google's SDK)
-- Backend: (Please refer to ./server/README.md for more details)
+- Backend:
   - [Express](https://expressjs.com): Server framework for Node.js
   - [body-parser](https://github.com/expressjs/body-parser)
   - [cookie-parser](https://github.com/expressjs/cookie-parser)
@@ -28,9 +28,9 @@ You can watch [this video](https://youtu.be/996OiexHze0) to better understand ho
 Go to Google Cloud Consle and set up OAuth 2.0 client ID. You can follow [this page](https://support.google.com/cloud/answer/6158849) for instructions.
 
 
-Create your own <code>.env</code> files for local variables.
+Create your own <code>.env</code> files for environment variables.
 
-One in the root directory for client:
+One at the root directory <code>/.env</code> for client:
 ```
 VITE_SERVER_ENDPOINT=http://localhost:5173
 
@@ -41,7 +41,7 @@ VITE_AUTHENTICATION_ENDPOINT=http://localhost:3000/api/oauth/google/verify
 VITE_AUTHORIZATION_ENDPOINT=http://localhost:3000/api/oauth/google/auth
 ```
 
-The other in /server for server:
+The other at <code>/server/.env</code> for server:
 ```
 GOOGLE_OAUTH_CLIENT_ID=your_google_client_id
 GOOGLE_OAUTH_CLIENT_SECRET=your_google_client_secret
