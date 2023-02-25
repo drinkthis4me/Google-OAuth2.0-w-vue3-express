@@ -1,8 +1,10 @@
 # Google Identity Service + vue3 + express
 
-This project implement Google OAuth 2.0 for both authentication and authorization.
+This project implement Google OAuth 2.0 for [authentication](https://developers.google.com/identity/gsi/web/guides/overview) and [authorization](https://developers.google.com/identity/oauth2/web/guides/overview).
 
 You can watch [this video](https://youtu.be/996OiexHze0) to better understand how Google OAuth 2.0 works.
+
+![Screenshot of this project](docs/Screenshot%202023-02-25%20at%2011-17-16%20Vite%20App.png)
 
 # Project Dependencies
 - Frontend:
